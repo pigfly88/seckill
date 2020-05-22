@@ -1,0 +1,10 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+index:
+  path: /index/{id}
+  controller: App\Controller\IndexController::index
+  methods: POST
+  requirements:
+    id: '\d+'
